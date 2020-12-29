@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/bg-desktop.svg) no-repeat, hsl(257, 40%, 49%);
+    background-size:cover;   
+}
+
+.container {
+    display: flex;
+    margin: 70px auto;
+    max-width: 1440px;
+}
+
+.logo img{
+    margin: 40px 0 0 120px;
+    max-width: 100%;
+}
+
+.ilustracao img {
+    margin: 0 auto 0 -60px;
+    max-width: 100%;
+    display: block;
+    flex: 1;
+}
+
+.texto {
+    flex: 1;
+    margin: 30px auto 0 auto;
+    max-width: 600px;
+
+}
+.texto h1, p {
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 1.45em;
+    color: #fff;    
+}
+
+.texto p {  
+    margin: -20px 0 20px 0;
+    font-size: 20px;
+}
+
+.button {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: hsl(257, 40%, 49%);
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+}
+
+.footer {
+    padding-top: 80px;
+    justify-content: space-around;
+}
+
+.desafio { 
+    font-size: 16px; 
+}
+.desafio a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    color: inherit;
+}
+
+.redes-sociais {
+    display: flex;
+    list-style: none;
+}
+
+.redes-sociais li a {
+    padding-right: 15px;  
+}
+
+.redes-sociais li a img {
+    width: 50px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    padding: 10px; 
+}
+
+.redes-sociais li a img:hover, button:hover {
+   border-color: hsl(300, 69%, 71%);
+   background-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width:500px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat, hsl(257, 40%, 49%);
+    }
+    .container {  
+        flex-direction: column;
+        max-width: 300px;   
+        margin: 0 auto;  
+    }   
+    .logo img{
+        margin: 40px 0 0 30px;
+        width: 180px;
+    }
+    .ilustracao img {
+        margin: 70px 0 0 0;
+    }
+    .texto {
+        margin: 50px auto;
+        max-width: 350px;
+    }   
+    .texto h1 {
+        font-size: 30px; 
+        text-align: center;
+    }
+    .texto p {
+        font-size: 18px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .button {
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 15px 90px;
+        border: none;
+        border-radius: 30px;
+    }
+
+    .footer {
+        margin: -60px auto;
+    }
+    .desafio { 
+        text-align: center;
+    }
+
+    .redes-sociais {
+        margin: 20px auto 50px auto;
+    }
+}    
